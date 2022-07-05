@@ -1,0 +1,174 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #be3144;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+nav >ul{
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  float: right;
+  
+}
+
+li{
+     list-style: none; 
+    
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#welcome-section{
+  background-color: black;
+  width: 100%;
+  height: 50%;
+}
+
+#welcome-section h1{
+  color: white;
+  font-family: Raleway, sans-serif;
+  
+}
+
+#welcome-section p{
+  color: #be3144;
+  font-family: Raleway, sans-serif;
+  font-style: italic;
+  
+}
+
+#welcome-div{
+  display: block;
+  text-align: center;
+  padding-top: 75px;
+
+}
+
+#projects{
+  background-color: #45567d;
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+#projects a{
+  background-color: #303841
+}
+
+#projects h2{
+   max-width: 640px;
+  margin: 0 auto 6rem auto;
+  color: white;
+  text-decoration: underline;
+}
+ 
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+.project-image{
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  color: white;
+  font-size: 1rem;
+  padding: 2rem 0.5rem;
+  font-family: Ralewey, sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+#contact-header{
+  text-align: center;
+}
+
+#contact h2{
+  color: white;
+}
+
+#contact p{
+  font-style: italic;
+  color: white;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: #303841;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #303841;
+    border-top: 4px solid #be3144;
+}
+
+footer > p {
+    margin: 2rem;
+    color: white;
+}
+
